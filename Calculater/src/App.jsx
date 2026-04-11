@@ -11,14 +11,22 @@ function App() {
       que: prev.que + val,
     }));
   };
+  // store operation
   const task = (tas) => {
     setOperation(tas);
     output(tas);
   };
+  // store number
   const storeData = (num) => {
     if (operation == "") {
+      if (num == "." && num1.includes(".")) {
+        return;
+      }
       setNum1(num1 + num);
     } else {
+      if (num == "." && num2.includes(".")) {
+        return;
+      }
       setNum2(num2 + num);
     }
     output(num);
@@ -57,6 +65,20 @@ function App() {
     setNum2("");
     setOperation("");
   };
+
+  //deleteLast
+  const deleteLast = () => {
+    if (num2 != "") {
+      setNum2(num2.slice(0, -1));
+      update((prev) => ({ ...prev, que: prev.que.slice(0, -1) })); // ✅ add karo
+    } else if (operation != "") {
+      setOperation("");
+      update((prev) => ({ ...prev, que: prev.que.slice(0, -1) })); // ✅ add karo
+    } else {
+      setNum1(num1.slice(0, -1));
+      update((prev) => ({ ...prev, que: prev.que.slice(0, -1) })); // ✅ add karo
+    }
+  };
   return (
     <div className="container">
       <div className="ansQue">
@@ -67,8 +89,21 @@ function App() {
         <button className="c1" onClick={clear}>
           C
         </button>
-        <button className="c1">⌫</button>
-        <button className="c1">%</button>
+        <button className="c1" onClick={deleteLast}>
+          ⌫
+        </button>
+        <button
+          className="c1"
+          onClick={() => {
+            if (num1 != "") {
+              const result = Number(num1) / 100;
+              setNum1(String(result));
+              update((prev) => ({ ...prev, que: String(result) }));
+            }
+          }}
+        >
+          %
+        </button>
         <button
           className="c2"
           onClick={() => {
@@ -172,7 +207,13 @@ function App() {
         >
           0
         </button>
-        <button>.</button>
+        <button
+          onClick={() => {
+            storeData(".");
+          }}
+        >
+          .
+        </button>
         <button className="c3" onClick={solve}>
           =
         </button>
