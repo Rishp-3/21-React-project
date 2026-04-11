@@ -94,4 +94,4 @@ GitHub: [@Rishp-3](https://github.com/Rishp-3)
 
 ## 📄 License
 
-This project is open source and available under the [MIT License]([LICENSE](https://github.com/Rishp-3/Project3/blob/main/LICENSE)).
+This project is open source and available under the [MIT License](https://github.com/Rishp-3/Project3/blob/main/LICENSE).
