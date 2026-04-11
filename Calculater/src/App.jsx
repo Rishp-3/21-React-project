@@ -1,29 +1,34 @@
-import Button from "./components/Button";
-import './App.css'
+import "./App.css";
 const App = () => {
   return (
-    <div>
-      <Button data="C"/>
-      <Button data="R"/>
-      <Button data="%"/>
-      <Button data="/"/>
-      <Button data="7"/>
-      <Button data="8"/>
-      <Button data="9"/>
-      <Button data="X"/>
-      <Button data="4"/>
-      <Button data="5"/>
-      <Button data="6"/>
-      <Button data="-"/>
-      <Button data="1"/>
-      <Button data="2"/>
-      <Button data="3"/>
-      <Button data="+"/>
-      <Button data="0"/>
-      <Button data="."/>
-      <Button data="="/>
+    <div className="container">
+      <div className="ansQue">
+        <div className="ans"></div>
+        <div className="que"></div>
+      </div>
+      <div className="button">
+        <button className="c1" value="C">C</button>
+        <button className="c1" value="⌫">⌫</button>
+        <button className="c1" value="%">%</button>
+        <button className="c2" value="/">/</button>
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button className="c2" value="X">X</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button className="c2" value="-">-</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button className="c2" value="+">+</button>
+        <button className="ze" value="0">0</button>
+        <button value=".">.</button>
+        <button className="c3" value="=">=</button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

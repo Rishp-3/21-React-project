@@ -1,6 +1,62 @@
-div{
-    display: flex;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
-button{
-    padding: 10px;
+.container {
+  background-color: #f3f4f6;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.ansQue {
+  background-color: #dde3eb;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+}
+.que {
+  display: flex;
+  justify-content: end;
+  font-size: small;
+  overflow: hidden;
+}
+.ans {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: x-large;
+  overflow: hidden;
+}
+.button {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 45px);
+  grid-template-rows: repeat(5, 35px);
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  background-color: #d7dce3;
+  border: none;
+}
+
+.ze {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.c1 {
+  background-color: #bfc6ce;
+}
+.c2 {
+  background-color: #4338ca;
+  color: #fff;
+}
+.c3 {
+  background-color: #7c3aed;
+  color: #fff;
 }
