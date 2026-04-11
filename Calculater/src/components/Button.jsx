@@ -1,7 +1,7 @@
 function Button (props) {
     return (
         <div>
-            <button>{props.number}</button>
+            <button>{props.data}</button>
         </div>
     );
 }

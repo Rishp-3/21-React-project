@@ -1,17 +1,27 @@
 import Button from "./components/Button";
+import './App.css'
 const App = () => {
   return (
     <div>
-      <Button number="1"/>
-      <Button number="2"/>
-      <Button number="3"/>
-      <Button number="4"/>
-      <Button number="5"/>
-      <Button number="6"/>
-      <Button number="7"/>
-      <Button number="8"/>
-      <Button number="9"/>
-      <Button number="0"/>
+      <Button data="C"/>
+      <Button data="R"/>
+      <Button data="%"/>
+      <Button data="/"/>
+      <Button data="7"/>
+      <Button data="8"/>
+      <Button data="9"/>
+      <Button data="X"/>
+      <Button data="4"/>
+      <Button data="5"/>
+      <Button data="6"/>
+      <Button data="-"/>
+      <Button data="1"/>
+      <Button data="2"/>
+      <Button data="3"/>
+      <Button data="+"/>
+      <Button data="0"/>
+      <Button data="."/>
+      <Button data="="/>
     </div>
   );
 }
