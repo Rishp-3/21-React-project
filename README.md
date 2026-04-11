@@ -2,7 +2,8 @@
 
 ![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=250&section=header&text=21%20React%20Projects&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Production-grade%20React%20engineering%2C%20one%20project%20at%20a%20time&descAlignY=62&descSize=20&descColor=c4b5fd)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=650&height=60&lines=⚛️+21+React+Projects+%7C+Built+to+Learn%2C+Built+to+Last;🔥+Vite+5+%2B+React+18+%7C+Hooks+%7C+Real+APIs;🧠+From+useState+to+useReducer+—+All+Covered;🚀+Zero+Config.+One+Command.+Full+Stack+Ready." alt="Typing SVG" />
+<!-- ✅ FIX: Emojis removed from lines — only ASCII + URL-encoded chars for reliable rendering -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3500&pause=1000&color=A78BFA&center=true&vCenter=true&width=650&height=55&lines=21+React+Projects+%7C+Built+to+Learn%2C+Built+to+Last;Vite+5+%2B+React+18+%7C+Hooks+%7C+Real+APIs;From+useState+to+useReducer+--+All+Covered;Zero+Config.+One+Command.+Full+Stack+Ready." alt="Typing SVG" />
 
 <br/>
 
@@ -17,7 +18,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-Grid%2FFlexbox-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://npmjs.com/)
-[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](./LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://choosealicense.com/licenses/mit/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-ff6b6b?style=for-the-badge&logo=git&logoColor=white)](https://makeapullrequest.com)
 
 <br/>
@@ -61,25 +62,43 @@
 const engineer = {
   name:       "Rishabh",
   handle:     "@Rishp-3",
-  project:    "21 React Projects Collection",
+  project:    "21 React Projects — Collection",
   stack:      ["React 18", "Vite 5", "JavaScript ES2023", "CSS3"],
   philosophy: "Ship real things. Learn by doing. No shortcuts.",
-  status:     "🟢 Actively Building",
+  status:     "Actively Building 🟢",
 } as const;
 ```
 
 </div>
 
-This repository is a **production-quality learning anthology** — 21 standalone React applications, each targeting a discrete concept, hook, or real-world pattern. No boilerplate generators, no copy-pasted tutorials. Every line of code was written from scratch to reinforce deep understanding.
+<br/>
 
-Whether you're reverse-engineering a specific pattern or using this as a technical reference — **you're in the right place.**
+### 🎯 What is this?
+
+This is not another tutorial clone — it's a **battle-tested learning anthology**. Each of the 21 projects was designed to isolate a specific React concept, push it to its practical limit, and produce something you'd actually want to show in a portfolio.
+
+### 🧩 How it's structured
+
+Every project lives in its **own folder**, has its **own `package.json`**, and runs **completely independently** — no monorepo overhead, no shared state, no "it worked on my machine" surprises. Boot any project in under 60 seconds.
+
+### 🏆 What you'll learn
+
+By going through all 21 projects in order, you'll have hands-on experience with:
+
+- All 5 core React hooks in real scenarios
+- Async data fetching with proper loading/error states
+- Browser APIs: Audio, Clipboard, LocalStorage
+- Component composition patterns used in production codebases
+- CSS architecture that scales without libraries
+
+> *"The best way to learn React is not to read about it — it's to build 21 things with it."*
 
 ---
 
 ## ✨ Features
 
 - ⚛️ **React 18 + Vite 5** — bleeding-edge toolchain with sub-100ms HMR
-- 🔁 **Full Hook Coverage** — `useState`, `useEffect`, `useRef`, `useCallback`, `useReducer` — all demonstrated in real context
+- 🔁 **Full Hook Coverage** — `useState`, `useEffect`, `useRef`, `useCallback`, `useReducer` — all in real context
 - 📡 **Real API Integration** — live data fetching with async/await patterns (Weather App, Movie Search)
 - 💾 **Persistent State** — Local Storage integration across multiple projects
 - 🎨 **Pixel-Perfect Layouts** — CSS Grid & Flexbox used intentionally, not incidentally
@@ -128,16 +147,16 @@ Whether you're reverse-engineering a specific pattern or using this as a technic
 ```
 React Hook / API        Coverage                                       Projects
 ────────────────────────────────────────────────────────────────────────────────
-🪝 useState          ██████████████████████████████████████████  21 / 21
-🪝 useEffect         ████████████████████████░░░░░░░░░░░░░░░░░░  12 / 21
-🪝 useRef            ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   5 / 21
-🪝 useCallback       ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   2 / 21
-🪝 useReducer        ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1 / 21
-🌐 Fetch / REST API  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3 / 21
-💾 Local Storage     ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3 / 21
-🎨 CSS Grid/Flexbox  ██████████████████████████████████████████  21 / 21
-🔊 Web Audio API     ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1 / 21
-📋 Clipboard API     ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1 / 21
+useState          ██████████████████████████████████████████  21 / 21
+useEffect         ████████████████████████░░░░░░░░░░░░░░░░░░  12 / 21
+useRef            ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   5 / 21
+useCallback       ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   2 / 21
+useReducer        ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1 / 21
+Fetch / REST API  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3 / 21
+Local Storage     ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3 / 21
+CSS Grid/Flexbox  ██████████████████████████████████████████  21 / 21
+Web Audio API     ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1 / 21
+Clipboard API     ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1 / 21
 ────────────────────────────────────────────────────────────────────────────────
 ```
 
@@ -292,7 +311,6 @@ npm run preview    # Preview the production build locally
 ├── ✅ ToDoList/              ← (identical structure)
 ├── 🕐 DigitalClock/         ← (identical structure)
 ├── 🎮 NumberGame/           ← (identical structure)
-├── 🔢 Counter/              ← (identical structure)
 │   ... 21 folders total ...
 └── ✂️  RockPaperScissors/   ← (identical structure)
 ```
@@ -389,14 +407,27 @@ git push origin feat/improve-weather-app
 
 <div align="center">
 
-```
-MIT License — Copyright © 2026 Rishabh (@Rishp-3)
+This project is licensed under the **MIT License** — free to use, fork, modify, and distribute with attribution.
 
-Permission is granted to use, copy, modify, and distribute this software
-for any purpose, with or without fee, provided this copyright notice is retained.
+[![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://choosealicense.com/licenses/mit/)
+
+```
+MIT License
+
+Copyright (c) 2026 Rishabh (@Rishp-3)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
-[![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](./LICENSE)
+See [`LICENSE`](./LICENSE) for the full license text.
 
 </div>
 
@@ -406,29 +437,56 @@ for any purpose, with or without fee, provided this copyright notice is retained
 
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/Rishp-3" width="120" style="border-radius:50%;" alt="Rishabh"/>
+<img src="https://avatars.githubusercontent.com/Rishp-3" width="130" style="border-radius:50%; border: 4px solid #a78bfa; padding: 3px;" alt="Rishabh"/>
 
 <br/><br/>
 
-### Rishabh
+## Rishabh
 
-*Frontend Engineer in the making. Shipping 21 projects so you don't have to guess what React feels like.*
+### `@Rishp-3`
+
+*Frontend Engineer in the making.*
+*Shipping 21 projects so you don't have to guess what React feels like.*
 
 <br/>
 
+<!-- ✅ FIX: Only confirmed working GitHub link used. Add your real LinkedIn/Twitter URLs below -->
 [![GitHub](https://img.shields.io/badge/GitHub-@Rishp--3-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rishp-3)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Rishp-3)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Rishp-3)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-a78bfa?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/Rishp-3)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN_HERE)
+[![Gmail](https://img.shields.io/badge/Gmail-Mail%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL@gmail.com)
+
+<br/><br/>
+
+---
+
+### GitHub Stats
+
+<img src="https://github-readme-stats.vercel.app/api?username=Rishp-3&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0c29&title_color=a78bfa&icon_color=61DAFB&text_color=ffffff" height="165" alt="GitHub Stats"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rishp-3&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f0c29&title_color=a78bfa&text_color=ffffff" height="165" alt="Top Languages"/>
 
 <br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Rishp-3&theme=tokyonight&hide_border=true&background=0f0c29&ring=a78bfa&fire=61DAFB&currStreakLabel=ffffff" alt="GitHub Streak"/>
+
+<br/><br/>
+
+---
+
+### Profile Trophy
+
+<img src="https://github-profile-trophy.vercel.app/?username=Rishp-3&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=6" alt="Trophies"/>
+
+<br/><br/>
 
 ---
 
 <br/>
 
-### ⭐ If this repo helped you, please drop a star!
+### ⭐ If this repo helped your React journey — a star means everything!
 
-*It keeps the motivation alive — and more projects are on the way.* 😊
+*It's the signal that keeps me building more.* 🚀
 
 <br/>
 
