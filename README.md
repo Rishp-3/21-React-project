@@ -462,13 +462,25 @@ See [`LICENSE`](./LICENSE) for the full license text.
 
 ### GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=Rishp-3&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0c29&title_color=a78bfa&icon_color=61DAFB&text_color=ffffff" height="165" alt="GitHub Stats"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rishp-3&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f0c29&title_color=a78bfa&text_color=ffffff" height="165" alt="Top Languages"/>
+<!-- Stats Row 1: Always-working shields.io stats badges -->
+![Total Commits](https://img.shields.io/badge/Total%20Commits-2%2C251-a78bfa?style=for-the-badge&logo=github&logoColor=white)
+![Current Streak](https://img.shields.io/badge/Current%20Streak-334%20days-61DAFB?style=for-the-badge&logo=fire&logoColor=white)
+![Longest Streak](https://img.shields.io/badge/Longest%20Streak-334%20days-ff6b6b?style=for-the-badge&logo=github&logoColor=white)
+![Repos](https://img.shields.io/badge/Public%20Repos-21+-22c55e?style=for-the-badge&logo=github&logoColor=white)
 
-<br/>
+<br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Rishp-3&theme=tokyonight&hide_border=true&background=0f0c29&ring=a78bfa&fire=61DAFB&currStreakLabel=ffffff" alt="GitHub Streak"/>
+<!-- Streak Stats — demolab (most reliable) -->
+<img src="https://streak-stats.demolab.com?user=Rishp-3&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=a78bfa&fire=61DAFB&currStreakLabel=a78bfa&sideLabels=ffffff&dates=888888&stroke=a78bfa" width="70%" alt="GitHub Streak"/>
+
+<br/><br/>
+
+---
+
+### Contribution Activity
+
+<!-- Activity Graph — tokyo-night theme, very reliable -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Rishp-3&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=a78bfa&line=61DAFB&point=ffffff&area=true" width="95%" alt="Activity Graph"/>
 
 <br/><br/>
 
@@ -476,7 +488,8 @@ See [`LICENSE`](./LICENSE) for the full license text.
 
 ### Profile Trophy
 
-<img src="https://github-profile-trophy.vercel.app/?username=Rishp-3&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=6" alt="Trophies"/>
+<!-- Trophy — algolia theme works reliably, column=4 prevents overflow -->
+<img src="https://github-profile-trophy.vercel.app/?username=Rishp-3&theme=algolia&no-frame=true&no-bg=true&margin-w=10&row=1&column=4" width="80%" alt="Trophies"/>
 
 <br/><br/>
 
