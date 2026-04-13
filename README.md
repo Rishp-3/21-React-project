@@ -115,10 +115,10 @@ By going through all 21 projects in order, you'll have hands-on experience with:
 | # | Project | Core Concept | Hooks Used | Folder |
 |:---:|:---|:---|:---|:---:|
 | `01` | 🧮 **Calculator** | Grid layout · Arithmetic engine | `useState` | [View →](./Calculater) |
-| `02` | ✅ **To-Do List** | Full CRUD · Persistence | `useState` + LocalStorage | [View →](./ToDoList) |
+| `02` | ✅ **To-Do List** | Full CRUD · Persistence | `useState` + LocalStorage | [View →](./To-DoList) |
 | `03` | 🕐 **Digital Clock** | Real-time intervals · Cleanup | `useEffect` | [View →](./DigitalClock) |
-| `04` | 🎮 **Number Guessing Game** | Game state machine | `useState` | [View →](./NumberGame) |
-| `05` | 🔢 **Counter App** | Event-driven state | `useState` | [View →](./Counter) |
+| `04` | 🎮 **Number Guessing Game** | Game state machine | `useState` | [View →](./NumberGuessingGame) |
+| `05` | 🔢 **Counter App** | Event-driven state | `useState` | [View →](./CounterApp) |
 | `06` | 💬 **Quote Generator** | Array sampling · Re-render control | `useState` | [View →](./QuoteGenerator) |
 | `07` | 🎨 **Color Generator** | Clipboard API · Hex manipulation | `useState` | [View →](./ColorGenerator) |
 | `08` | 🌤️ **Weather App** | Async fetch · Side effects | `useEffect` + Fetch API | [View →](./WeatherApp) |
@@ -132,8 +132,8 @@ By going through all 21 projects in order, you'll have hands-on experience with:
 | `16` | 🎬 **Movie Search** | Debounced API calls · Async UX | `useEffect` + Fetch API | [View →](./MovieSearch) |
 | `17` | 💬 **Chat UI** | Component composition · Scroll | `useState` + `useRef` | [View →](./ChatUI) |
 | `18` | 🎵 **Music Player** | Audio API · Playback control | `useRef` + `useEffect` | [View →](./MusicPlayer) |
-| `19` | 🛒 **E-commerce Page** | Cart logic · Component design | `useState` + `useReducer` | [View →](./EcommercePage) |
-| `20` | ⌨️ **Typing Speed Test** | Real-time diff · WPM calc | `useRef` + `useState` | [View →](./TypingTest) |
+| `19` | 🛒 **E-commerce Page** | Cart logic · Component design | `useState` + `useReducer` | [View →](./E-commercePage) |
+| `20` | ⌨️ **Typing Speed Test** | Real-time diff · WPM calc | `useRef` + `useState` | [View →](./TypingSpeedTest) |
 | `21` | ✂️ **Rock Paper Scissors** | Game logic · CSS animations | `useState` | [View →](./RockPaperScissors) |
 
 </div>
