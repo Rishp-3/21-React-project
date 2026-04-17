@@ -1,121 +1,99 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState, useCallback, useEffect, useRef } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [length, setCount] = useState(8);
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  const [charAllowed, setCharAllowed] = useState(false);
+  const [password, setPassword] = useState("");
+
+  const passRef = useRef(null);
+  const passwordGenerator = useCallback(() => {
+    let pass = "";
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+    if (numberAllowed) str += "0123456789";
+
+    if (charAllowed) str += "!@#$%^&*()_+-=[]{}|;:,.<>?/`~";
+
+    for (let i = 1; i <= length; i++) {
+      let char = Math.floor(Math.random() * str.length + 1);
+      pass += str.charAt(char);
+    }
+    setPassword(pass);
+  }, [length, numberAllowed, charAllowed, setPassword]);
+  
+  const copyPassword = useCallback(() => {
+    passRef.current?.select()
+    window.navigator.clipboard.writeText(password)
+  }, [password]);
+
+  useEffect(() => {
+    passwordGenerator();
+  }, [length, numberAllowed, charAllowed, passwordGenerator]);
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <div className=" w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 text-orange-500 bg-gray-800">
+        <h1 className=" text-white text-center my-3">Password Generator</h1>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <div className="flex shadow rounded-lg overflow-hidden md-4">
+          <input
+            type="text"
+            value={password}
+            placeholder="Password"
+            className=" outline-none w-full py-1 px-3 bg-white"
+            readOnly
+            ref={passRef}
+          />
+          <button 
+          onClick={copyPassword}
+            className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0"
+          >
+            copy
+          </button>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <div className="flex text-sm gap-x-2">
+          <div className="flex items-center gap-x-1">
+            <input
+              type="range"
+              className="cursor-pointer"
+              min={8}
+              max={16}
+              value={length}
+              onChange={(e) => {
+                setCount(e.target.value);
+              }}
+            />
+            <label>Length: {length}</label>
+          </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+          <div className="flex items-center gap-x-1">
+            <input
+              type="checkbox"
+              id="NumberAllowed"
+              defaultChecked={numberAllowed}
+              onChange={() => {
+                setNumberAllowed((prev) => !prev);
+              }}
+            />
+            <label htmlFor="NumberAllowed">Number</label>
+          </div>
+
+          <div className="flex items-center gap-x-1">
+            <input
+              type="checkbox"
+              defaultChecked={charAllowed}
+              id="charAllowed"
+              onChange={() => {
+                setCharAllowed((prev) => !prev);
+              }}
+            />
+            <label htmlFor="charAllowed">Characters</label>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
