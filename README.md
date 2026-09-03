@@ -2,7 +2,7 @@
 
 ![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=250&section=header&text=21%20React%20Projects&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Production-grade%20React%20engineering%2C%20one%20project%20at%20a%20time&descAlignY=62&descSize=20&descColor=c4b5fd)
 
-<!-- ✅ FIX: Emojis removed from lines — only ASCII + URL-encoded chars for reliable rendering -->
+<!-- ✅ FIX: Emojis removed from lines — only ASCII + URL-encoded chars for reliable rendering 00 -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3500&pause=1000&color=A78BFA&center=true&vCenter=true&width=650&height=55&lines=21+React+Projects+%7C+Built+to+Learn%2C+Built+to+Last;Vite+5+%2B+React+18+%7C+Hooks+%7C+Real+APIs;From+useState+to+useReducer+--+All+Covered;Zero+Config.+One+Command.+Full+Stack+Ready." alt="Typing SVG" />
 
 <br/>
