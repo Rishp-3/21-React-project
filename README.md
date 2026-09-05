@@ -1,6 +1,5 @@
 <div align="center">
 
-
 ![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=250&section=header&text=21%20React%20Projects&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Production-grade%20React%20engineering%2C%20one%20project%20at%20a%20time&descAlignY=62&descSize=20&descColor=c4b5fd)
 
 <!-- ✅ FIX: Emojis removed from lines — only ASCII + URL-encoded chars for reliable rendering 00 -->
